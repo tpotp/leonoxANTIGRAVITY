@@ -14,8 +14,9 @@ services:
         value: "false"
 
   # Frontend Static Site
-  - type: static
+  - type: web
     name: leonoxantigravity
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
