@@ -2,6 +2,7 @@ services:
   # Backend API Service
   - type: web
     name: leonoxantigravity-api
+    plan: free
     runtime: python
     buildCommand: pip install -r backend/requirements.txt
     startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
@@ -16,6 +17,7 @@ services:
   # Frontend Static Site
   - type: web
     name: leonoxantigravity
+    plan: free
     runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
