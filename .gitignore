@@ -1,0 +1,24 @@
+# Virtual environment
+env/
+venv/
+.env
+
+# Python cache and testing
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Databases
+*.db
+*.sqlite3
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+build/
+.eslintcache
+
+# OS files
+.DS_Store
+Thumbs.db
