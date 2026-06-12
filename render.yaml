@@ -17,7 +17,6 @@ services:
   # Frontend Static Site
   - type: web
     name: leonoxantigravity
-    plan: free
     runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
