@@ -22,10 +22,7 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: leonoxantigravity-api
-          property: url
+        value: https://leonoxantigravity-api.onrender.com
     routes:
       - type: rewrite
         source: /*
